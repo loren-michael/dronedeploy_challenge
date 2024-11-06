@@ -2,9 +2,9 @@
 
 Internship challenge for DroneDeploy
 
-### Requirements:
+## Requirements:
 
-1. Frontend:
+### 1. Frontend:
 
 - Preferred: Angular (extra credit for using TypeScript)
 - Fallback: Use a frontend framework you are comfortable with (React, Vue, etc.).
