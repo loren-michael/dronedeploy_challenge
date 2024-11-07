@@ -33,7 +33,7 @@ image_1 = Image.create(
   gimbal_mode: "Follow",
   subject_detection: "Yes",
   image_tags: ["Geyser", "Steam"],
-  # image_url: ""
+  image_url: ""
 )
 
 image_2 = Image.create(
@@ -56,7 +56,7 @@ image_2 = Image.create(
   gimbal_mode: "Free",
   subject_detection: "No",
   image_tags: ["Forest", "River"],
-  # image_url: ""
+  image_url: ""
 )
 
 image_3 = Image.create(
@@ -79,7 +79,7 @@ image_3 = Image.create(
   gimbal_mode: "Tripod",
   subject_detection: "Yes",
   image_tags: ["Wildlife", "Elk"],
-  # image_url: ""
+  image_url: ""
 )
 
 image_4 = Image.create(
@@ -102,7 +102,7 @@ image_4 = Image.create(
   gimbal_mode: "Follow",
   subject_detection: "No",
   image_tags: ["Canyon", "Waterfall"],
-  # image_url: ""
+  image_url: ""
 )
 
 image_5 = Image.create(
@@ -125,7 +125,7 @@ image_5 = Image.create(
   gimbal_mode: "Free",
   subject_detection: "Yes",
   image_tags: ["Thermal Pool", "Bacteria"],
-  # image_url: ""
+  image_url: ""
 )
 
 puts "Image creation complete"
