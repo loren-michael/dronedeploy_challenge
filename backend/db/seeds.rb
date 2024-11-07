@@ -33,7 +33,7 @@ image_1 = Image.create(
   gimbal_mode: "Follow",
   subject_detection: "Yes",
   image_tags: ["Geyser", "Steam"],
-  image_url: ""
+  image_url: "https://c2.staticflickr.com/6/5118/13931227900_694812e280_b.jpg"
 )
 
 image_2 = Image.create(
@@ -56,7 +56,7 @@ image_2 = Image.create(
   gimbal_mode: "Free",
   subject_detection: "No",
   image_tags: ["Forest", "River"],
-  image_url: ""
+  image_url: "https://cache.desktopnexus.com/thumbseg/1868/1868721-bigthumbnail.jpg"
 )
 
 image_3 = Image.create(
@@ -79,7 +79,7 @@ image_3 = Image.create(
   gimbal_mode: "Tripod",
   subject_detection: "Yes",
   image_tags: ["Wildlife", "Elk"],
-  image_url: ""
+  image_url: "https://globalnews.ca/wp-content/uploads/2017/02/elk-e1487978751914.jpg?quality=85&strip=all&w=450"
 )
 
 image_4 = Image.create(
@@ -102,7 +102,7 @@ image_4 = Image.create(
   gimbal_mode: "Follow",
   subject_detection: "No",
   image_tags: ["Canyon", "Waterfall"],
-  image_url: ""
+  image_url: "https://llandscapes-10674.kxcdn.com/wp-content/uploads/2017/11/martin-jernberg-197949.jpg"
 )
 
 image_5 = Image.create(
@@ -125,7 +125,7 @@ image_5 = Image.create(
   gimbal_mode: "Free",
   subject_detection: "Yes",
   image_tags: ["Thermal Pool", "Bacteria"],
-  image_url: ""
+  image_url: "https://mydronetips.com/wp-content/uploads/2021/02/dronewiththermalcamera.jpg"
 )
 
 puts "Image creation complete"
