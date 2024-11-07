@@ -9,7 +9,7 @@ class CreateImages < ActiveRecord::Migration[7.1]
       t.string :file_name
       t.integer :camera_tilt_deg
       t.integer :focal_length_mm
-      t.ingeter :iso
+      t.integer :iso
       t.string :shutter_speed
       t.string :aperture
       t.integer :color_temp_k
