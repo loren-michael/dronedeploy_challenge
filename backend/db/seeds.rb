@@ -48,7 +48,6 @@
   #     "shutter_speed": "1/1000",
   #     "aperture": "f/4",
   #     "color_temp_k": 5200,
-
   #     "image_format": "RAW+JPEG",
   #     "file_size_mb": 27.1,
   #     "drone_speed_mps": 3.8,
