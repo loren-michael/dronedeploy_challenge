@@ -31,7 +31,7 @@ const App = () => {
 
       <br></br>
 
-      <Prompt />
+      <Prompt images={images} />
 
     </div>
   )

@@ -11,7 +11,7 @@ const openai = new OpenAI({
 })
 
 
-const Prompt = () => {
+const Prompt = (images) => {
   const [message, setMessage] = useState("");
   const [chats, setChats] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
@@ -36,7 +36,7 @@ const Prompt = () => {
         ...chats,
       ],
     }).then(r => {
-      console.log(r)
+      // console.log(r)
       msgs.push(r.choices[0].message);
       setChats(msgs);
       setIsTyping(false);
