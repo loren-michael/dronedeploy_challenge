@@ -62,15 +62,12 @@ const Prompt = () => {
         }
       </section>
 
-    {
-      isTyping ? (
-        <div>
-          <p>
-            <i>Thinking...</i>
-          </p>
-        </div>
-      ) : ""
-    }
+      <div className={ isTyping ? "": "hide"} >
+        <p>
+          <i>Thinking...</i>
+        </p>
+      </div>
+
 
       <form onSubmit={e => chat(e, message)}>
         <input 
