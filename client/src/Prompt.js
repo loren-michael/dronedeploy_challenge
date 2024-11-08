@@ -31,7 +31,7 @@ const Prompt = () => {
       messages: [
         {
           role: "system",
-          content: "You are EbereGPT. You help with image data."
+          content: "You help with image data."
         },
         ...chats,
       ],

@@ -17,7 +17,7 @@ const App = () => {
       <h1>DroneDeploy Challenge</h1>
       
       <div>
-        <h2>Drone Images</h2>
+        <h3>Recent Images</h3>
         
         {images && images.length ? 
           images.map(image => {
@@ -27,11 +27,12 @@ const App = () => {
               </div>
             )
           }) : <div></div>}
-        
-
       </div>
+
       <br></br>
+
       <Prompt />
+
     </div>
   )
 }
