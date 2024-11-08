@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import OpenAI from 'openai';
 
-// "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"
 
 const openai = new OpenAI({
   apiKey: process.env.REACT_APP_OPENAI_API_KEY,
