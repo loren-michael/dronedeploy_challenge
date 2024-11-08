@@ -22,8 +22,8 @@ const App = () => {
         {images && images.length ? 
           images.map(image => {
             return (
-              <div>
-                <ImageCard key={image.id} images={images} />
+              <div key={image.id}>
+                <ImageCard image={image} />
               </div>
             )
           }) : <div></div>}
