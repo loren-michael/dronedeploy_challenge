@@ -21,8 +21,9 @@ const Prompt = () => {
 
     setIsTyping(true);
     let msgs = chats;
-    msgs.push({role:"user", content: message})
-    setChats(msgs)
+    msgs.push({role:"user", content: message});
+    window.scrollTo(0,1e10)
+    setChats(msgs);
     setMessage("");
 
     await openai.chat.completions.create({
@@ -39,6 +40,7 @@ const Prompt = () => {
       msgs.push(r.choices[0].message);
       setChats(msgs);
       setIsTyping(false);
+      window.scrollTo(0,1e10)
     }).catch(error => console.log(error))
   };
 

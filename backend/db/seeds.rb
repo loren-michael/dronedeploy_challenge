@@ -13,7 +13,7 @@ Image.destroy_all
 
 puts "Creating Images"
 
-image_1 = Image.create(
+Image.create!(
   latitude: "44.4280° N",
   longitude: "110.5885° W",
   altitude_m: 50,
@@ -36,7 +36,7 @@ image_1 = Image.create(
   image_url: "https://c2.staticflickr.com/6/5118/13931227900_694812e280_b.jpg"
 )
 
-image_2 = Image.create(
+Image.create!(
   latitude: "44.4279° N",
   longitude: "110.5890° W",
   altitude_m: 75,
@@ -59,7 +59,7 @@ image_2 = Image.create(
   image_url: "https://cache.desktopnexus.com/thumbseg/1868/1868721-bigthumbnail.jpg"
 )
 
-image_3 = Image.create(
+Image.create!(
   latitude: "44.4275° N",
   longitude: "110.5888° W",
   altitude_m: 100,
@@ -82,7 +82,7 @@ image_3 = Image.create(
   image_url: "https://globalnews.ca/wp-content/uploads/2017/02/elk-e1487978751914.jpg?quality=85&strip=all&w=450"
 )
 
-image_4 = Image.create(
+Image.create!(
   latitude: "44.4277° N",
   longitude: "110.5882° W",
   altitude_m: 120,
@@ -105,7 +105,7 @@ image_4 = Image.create(
   image_url: "https://llandscapes-10674.kxcdn.com/wp-content/uploads/2017/11/martin-jernberg-197949.jpg"
 )
 
-image_5 = Image.create(
+Image.create!(
   latitude: "44.4282° N",
   longitude: "110.5879° W",
   altitude_m: 80,

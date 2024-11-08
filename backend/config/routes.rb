@@ -11,6 +11,4 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get '/hello', to: 'application#hello_world'
-  
-
 end
