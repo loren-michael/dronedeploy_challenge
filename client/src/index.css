@@ -101,5 +101,6 @@ input:focus{
 img {
   padding: 5px;
   max-width: 300px;
-  height: auto
+  height: auto;
+  float:right
 }

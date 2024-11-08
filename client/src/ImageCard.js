@@ -36,11 +36,9 @@ const ImageCard = (image) => {
           Image Tags: {image.image.image_tags[0]}, {image.image.image_tags[1]}<br/>
         </div>
       </div>
-
-
-      <button onClick={e => toggleDetails()}>{show ? "Hide details" : "Show details"}</button>
+      <button onClick={e => toggleDetails(e)}>{show ? "Hide details" : "Show details"}</button>
     </div>
   )
-}
+};
 
 export default ImageCard
