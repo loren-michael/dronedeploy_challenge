@@ -1,47 +1,37 @@
-# dronedeploy_challenge
+# DroneDeploy Challenge
 
 Internship challenge for DroneDeploy
 
-## Requirements:
+## Description
 
-### 1. Frontend:
+This is a simple application built for DroneDeploy's Intern Challenge. It uses a React frontend with a clean, responsive UI, and displays the provided drone data in card format. The backend uses Rails and PostgreSQL. There is a chat box that uses OpenAI to answer questions about the data provided. I was not able to finish full API service integration, and so instead included all information needed directly in the content in order to get relevant responses.
 
-- Preferred: Angular (extra credit for using TypeScript)
-- Fallback: Use a frontend framework you are comfortable with (React, Vue, etc.).
-- Build a clean, responsive UI that allows users to input and receive information.
-- Display the drone data provided on the page in a simple table or card format.
-- Input box for user queries (e.g., “What is the altitude of the second image?” or “What is the battery level of the drone during the last image?”).
-- Display the AI response or the mock response.
+### Setup
 
-### 2. API:
+To run this application, first clone the repository to your machine and navigate to the directory and run the following:
 
-- Preferred: Python (e.g., Flask or FastAPI).
-- Fallback: Use Node.js or another language if you are not familiar with Python.
-- The backend should:
-  - Receive a user query.
-  - Use an AI service (Gemini, OpenAI, Anthropic) to interpret the question and retrieve the relevant data.
-  - If AI service integration is not possible in the allotted time, mock the response with some minimal logic and return it to the front end.
+```
+$ bundle install
+```
 
-### 3. AI Integration (Optional but encouraged):
+Once finished installing, you will need to make sure there is data seeded into your database. Do this by navigating to the backend directory and executing the following in your console:
 
-- Integrate with Gemini, OpenAI, or Anthropic to handle natural language queries.
-- If AI integration is not feasible, provide a mock response.
+```
+$ rails db:migrate db:seed
+```
 
-### 4. Optional Bonus:
+This will reset any data in the database and make sure you have good data to start with.
 
-- Use TypeScript if working with Angular or another framework that supports it.
-- Add a feature that allows sorting or filtering the drone data table based on user-selected criteria.
-- Implement basic unit tests.
+Then, start up a server to utilize the app:
 
-### 5. Instructions:
+```
+rails s
+```
 
-- Provide clear instructions on how to run both the frontend and backend.
-- Ensure that the app can be run locally with minimal setup
+Navigate back to the home directory for the repository and start the React server:
 
-### Timebox:
+```
+npm start --prefix client
+```
 
-- This task should take 2-4 hours to complete.
-- Evaluation Criteria:
-  - Frontend: Clean UI/UX, input handling, and responsiveness.
-  - Backend: Clean API design, AI (or mock) integration, and ability to answer user queries accurately.
-  - Overall: Code clarity, structure.
+The application should start in your browser and show you the DroneDeploy Challenge page. You should see 5 boxes that have image information from the database. Clicking on the Show Details button will expand the box to show all of the details, including a mock photo for each that I found. Click the button again to hide the details. At the bottom of the page is a chat that you can use to ask ChatGPT for information about the photos in the database. Unfortunately I was not able to set up full API integration in the time allotted, and instead simply included all of the data in the form of a string within the content tag of the chat creation.
