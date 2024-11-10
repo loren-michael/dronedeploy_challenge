@@ -22,7 +22,9 @@ $ rails db:migrate db:seed
 
 This will reset any data in the database and make sure you have good data to start with.
 
-Then, start up a server to utilize the app:
+Next, you will need to provide an OpenAI API Key. To do this, go to the following address: https://platform.openai.com/api-keys and make a new API key for this application. Once you have it copied, open the .env file in the client directory and add the key to the REACT_APP_OPENAI_API_KEY variable.
+
+Then, in your command line from the backend directory start up a server to utilize the app:
 
 ```
 rails s

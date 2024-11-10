@@ -4,8 +4,6 @@ import OpenAI from 'openai';
 
 
 const openai = new OpenAI({
-  organization: "org-xmdyiG4AtYsl41ITIQqSjN5E",
-  project: "proj_xYckHWJSByertgcprbhLuela",
   apiKey: process.env.REACT_APP_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true
 })
